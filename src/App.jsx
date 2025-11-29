@@ -1,6 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 
+// Import sound files
+import soundA from './assets/sounds/sound-a.mp3';
+import soundB from './assets/sounds/sound-b.mp3';
+import soundC from './assets/sounds/sound-c.mp3';
+import soundD from './assets/sounds/sound-d.mp3';
+import soundE from './assets/sounds/sound-e.mp3';
+
 export default function AdS() {
   const [selectedSounds, setSelectedSounds] = useState([]);
   const [frequency, setFrequency] = useState(10);
@@ -11,12 +18,13 @@ export default function AdS() {
   const timeoutRef = useRef(null);
   const audioRef = useRef(null);
 
+  // Sample sounds - in production, these would be actual audio files
   const sounds = [
-    { id: 'A', name: '客艙服務鈴Call Button', url: new URL('../assets/sounds/sound-a.mp3', import.meta.url).href },
-    { id: 'B', name: 'LINE聲響', url: new URL('../assets/sounds/sound-b.mp3', import.meta.url).href },
-    { id: 'C', name: '簡訊聲', url: new URL('../assets/sounds/sound-c.mp3', import.meta.url).href },
-    { id: 'D', name: 'Sound D', url: new URL('../assets/sounds/sound-d.mp3', import.meta.url).href },
-    { id: 'E', name: 'Sound E', url: new URL('../assets/sounds/sound-e.mp3', import.meta.url).href },
+    { id: 'A', name: '客艙服務鈴', url: soundA },
+    { id: 'B', name: 'LINE聲響', url: soundB },
+    { id: 'C', name: '簡訊聲', url: soundC },
+    { id: 'D', name: 'Sound D', url: soundD },
+    { id: 'E', name: 'Sound E', url: soundE },
   ];
 
   const handleSoundToggle = (soundId) => {
