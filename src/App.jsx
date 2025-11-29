@@ -11,13 +11,12 @@ export default function AdS() {
   const timeoutRef = useRef(null);
   const audioRef = useRef(null);
 
-  // Sample sounds - in production, these would be actual audio files
   const sounds = [
-    { id: 'A', name: 'Call Button', url: '/sounds/sound-a.mp3' },
-    { id: 'B', name: 'LINE', url: '/sounds/sound-b.mp3' },
-    { id: 'C', name: 'Sound C', url: '/sounds/sound-c.mp3' },
-    { id: 'D', name: 'Sound D', url: '/sounds/sound-d.mp3' },
-    { id: 'E', name: 'Sound E', url: '/sounds/sound-e.mp3' },
+    { id: 'A', name: '客艙服務鈴Call Button', url: new URL('../assets/sounds/sound-a.mp3', import.meta.url).href },
+    { id: 'B', name: 'LINE聲響', url: new URL('../assets/sounds/sound-b.mp3', import.meta.url).href },
+    { id: 'C', name: '簡訊聲', url: new URL('../assets/sounds/sound-c.mp3', import.meta.url).href },
+    { id: 'D', name: 'Sound D', url: new URL('../assets/sounds/sound-d.mp3', import.meta.url).href },
+    { id: 'E', name: 'Sound E', url: new URL('../assets/sounds/sound-e.mp3', import.meta.url).href },
   ];
 
   const handleSoundToggle = (soundId) => {
