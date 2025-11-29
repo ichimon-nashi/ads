@@ -10,7 +10,7 @@ import soundE from './assets/sounds/sound-e.mp3';
 
 export default function AdS() {
   const [selectedSounds, setSelectedSounds] = useState([]);
-  const [frequency, setFrequency] = useState(10);
+  const [frequency, setFrequency] = useState(5);
   const [volume, setVolume] = useState(20);
   const [isRunning, setIsRunning] = useState(false);
   const [nextPlayTime, setNextPlayTime] = useState(null);
@@ -40,7 +40,7 @@ export default function AdS() {
   };
 
   const resetSettings = () => {
-    setFrequency(10);
+    setFrequency(5);
     setVolume(20);
   };
 

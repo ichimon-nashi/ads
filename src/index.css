@@ -14,7 +14,7 @@ body {
 .ads-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 .ads-title {
@@ -23,7 +23,7 @@ body {
 }
 
 .ads-title h1 {
-  font-size: 4.5rem;
+  font-size: 6rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: #ff006e;
@@ -37,7 +37,7 @@ body {
 }
 
 .ads-title h2 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: #06ffa5;
   filter: drop-shadow(0 0 10px rgba(6, 255, 165, 0.5));
   animation: flicker 5s ease-in-out infinite;
@@ -359,13 +359,17 @@ body {
 }
 
 @media (max-width: 768px) {
+  .ads-container {
+    padding: 0rem;
+  }
+  
   .settings-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
   .ads-title h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .ads-title h2 {
