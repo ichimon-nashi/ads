@@ -7,6 +7,8 @@ import soundB from './assets/sounds/sound-b.mp3';
 import soundC from './assets/sounds/sound-c.mp3';
 import soundD from './assets/sounds/sound-d.mp3';
 import soundE from './assets/sounds/sound-e.mp3';
+import soundF from './assets/sounds/sound-f.mp3';
+import soundG from './assets/sounds/sound-g.mp3';
 
 export default function AdS() {
   const [selectedSounds, setSelectedSounds] = useState([]);
@@ -21,10 +23,12 @@ export default function AdS() {
   // Sample sounds - in production, these would be actual audio files
   const sounds = [
     { id: 'A', name: '客艙服務鈴', url: soundA },
-    { id: 'B', name: 'LINE聲響', url: soundB },
+    { id: 'B', name: '安全帶', url: soundB },
     { id: 'C', name: '簡訊聲', url: soundC },
-    { id: 'D', name: 'Sound D', url: soundD },
-    { id: 'E', name: 'Sound E', url: soundE },
+    { id: 'D', name: 'LINE聲響 1', url: soundD },
+    { id: 'E', name: 'LINE聲響 2', url: soundE },
+    { id: 'E', name: 'LINE聲響 3', url: soundF },
+    { id: 'E', name: 'LINE聲響 4', url: soundG },
   ];
 
   const handleSoundToggle = (soundId) => {
