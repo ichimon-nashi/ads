@@ -27,8 +27,8 @@ export default function AdS() {
     { id: 'C', name: '簡訊聲', url: soundC },
     { id: 'D', name: 'LINE聲響 1', url: soundD },
     { id: 'E', name: 'LINE聲響 2', url: soundE },
-    { id: 'E', name: 'LINE聲響 3', url: soundF },
-    { id: 'E', name: 'LINE聲響 4', url: soundG },
+    { id: 'F', name: 'LINE聲響 3', url: soundF },
+    { id: 'G', name: 'LINE聲響 4', url: soundG },
   ];
 
   const handleSoundToggle = (soundId) => {
